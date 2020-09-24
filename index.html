@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    
+    <style>
+        
+        body {
+            background-image: url('img-sq/Kobe/dunk.jpg'); 
+            background-size: cover ;
+            text-align: center;
+        }
+        
+        a {
+            margin-left:50px;
+            margin-top: 10px;
+        }
+
+        .wrapper {
+            position: absolute;
+            left: 65%;
+            top: 10%;
+            width: 350px;        
+            height: 350px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+
+
+
+    <title>Document</title>
+</head>
+<body onclick="changeImage()">
+    
+    <nav class="ui three item menu">
+
+        <a class="item" href="index.html">&#9064;</a>
+        <a class="item" href="pageTwo.html">&#8981;</a>
+        <a class="item" href="pageThree.html">&#8966;</a>
+
+    </nav>
+
+    <div class="wrapper">
+        <img src="img-sq/Kobe/2k5.jpg" alt="">
+    </div>
+
+
+
+<script>
+
+
+const pathNames = [
+        'img-sq/Kobe/2k5.jpg',
+        'img-sq/Kobe/22.-Nike-Kobe-9-Masterpiece.jpeg',
+        'img-sq/Kobe/Adidas-Crazy-1-Yellow-White.jpg',
+        'img-sq/Kobe/Adidas-EQT-Elevation-Colors.jpeg',
+        'img-sq/Kobe/adidas-KB8-III.jpg',
+        'img-sq/Kobe/Adidas-Kobe-KB8-II-B.jpg',
+        'img-sq/Kobe/Adidas-Kobe-Two-White-Side-Rear.jpg',
+        'img-sq/Kobe/kobe-hyperdunk-4.jpg',
+        'img-sq/Kobe/kobe-kb8-allstar.jpg',
+        'img-sq/Kobe/Nike-Kobe-8-Sulfer.jpg',
+        'img-sq/Kobe/nike-kobe-10-profile-insole.jpg',
+        'img-sq/Kobe/Nike-Kobe-11-X.jpg',
+        'img-sq/Kobe/nike-zoom-huarache-2k4-lakers-kobe-laser1.jpg',
+        'img-sq/Kobe/Nike-Zoom-Kobe-1-MPLS-Side.jpg',
+        'img-sq/Kobe/Nike-Zoom-Kobe-3-III-Lakers-Pair-Pose-Sole.jpg',
+        'img-sq/Kobe/Nike-Zoom-Kobe-4-Venomenom-Purple-Wolf-Grey-Volt-3.png',
+        'img-sq/Kobe/Nike-Zoom-Kobe-II.jpg',
+        'img-sq/Kobe/zoom-kobe-iv.jpg',
+        'img-sq/Kobe/zoom-kobe-iv.jpg',
+        'img-sq/Kobe/zoom-kobe-vi.jpg',
+        'img-sq/Kobe/zoom-kobe-vii.jpg',
+    ]
+
+    const myImageElement = document.body.querySelector('img');
+   
+    const changeImage = () => {
+
+        myImageElement.src = `${pathNames[Math.floor(Math.random()*pathNames.length)]}`;
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>
